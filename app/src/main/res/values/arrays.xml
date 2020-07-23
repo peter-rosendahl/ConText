@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_category_options">
+        <item>@string/local_auth</item>
+        <item>@string/library</item>
+        <item>@string/grocery</item>
+        <item>@string/directions</item>
+        <item>@string/various</item>
+        <item>@string/intro</item>
+    </string-array>
+
+</resources>

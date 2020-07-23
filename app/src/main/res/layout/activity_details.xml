@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="dk.prmedia.context.data.DetailActivity"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/detail_danish"
+            android:textSize="26sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="Danish sentence"/>
+
+        <TextView
+            android:id="@+id/detail_default"
+            android:textSize="20sp"
+            android:layout_below="@id/detail_danish"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="Default sentence"/>
+
+        <TextView
+            android:id="@+id/detail_phonetic"
+            android:textSize="20sp"
+            android:layout_below="@id/detail_default"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40sp"
+            android:fontFamily="monospace"
+            android:text="phonetic sentence"/>
+
+        <LinearLayout
+            android:id="@+id/detail_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/detail_phonetic"
+            android:layout_marginBottom="20sp">
+
+            <ImageView
+                android:id="@+id/sound_btn"
+                android:src="@drawable/ic_play_arrow_white_24dp"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Listen how to pronounciate the danish sentence."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_note_field"
+            android:layout_below="@id/detail_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Note"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4">
+
+                <EditText
+                    android:id="@+id/note_edit_text"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:minLines="1"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:scrollbars="vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

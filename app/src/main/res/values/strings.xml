@@ -1,0 +1,29 @@
+<resources>
+    <!-- App Title -->
+    <string name="app_name">ConText</string>
+
+    <!-- List title for categories -->
+    <string name="cat_list">Categories</string>
+
+    <string name="local_auth">Local Authority</string>
+    <string name="grocery">Grocery Store</string>
+    <string name="library">Library</string>
+    <string name="doctor">Doctor</string>
+    <string name="directions">Directions</string>
+    <string name="various">Various (helping sentences)</string>
+    <string name="intro">Introduction</string>
+    <string name="new_sentence">New Sentence</string>
+
+
+    <string name="sen_notes">Notes</string>
+    <string name="sen_sound">Play</string>
+
+
+    <string name="editor_insert_sentence_failed">Error with saving sentence</string>
+    <string name="editor_insert_sentence_success">Sentence saved</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+</resources>
